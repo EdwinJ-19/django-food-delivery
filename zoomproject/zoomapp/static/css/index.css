@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: "Annapurna SIL", serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
 nav{
     display: flex;
     align-items: center;
@@ -18,14 +24,83 @@ nav .nav-head p{
     font-size: 1.5rem;
     font-family: "Kode Mono", monospace;
 }
+nav .nav-head .nav-head-search input{
+    border: none;
+    border-radius: 10px;
+    background-color: #FA9E8C;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
 nav .nav-user{
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 nav .nav-user .button ul{
     display: flex;
     align-items:center;
     list-style: none;
-    gap: 1rem;
+    gap: 2rem;
+}
+container .c-search-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 0 0 0;
+    /* background-color: red; */
+}
+container .c-search-box .c-image .c-text p{
+    position: absolute;
+    top: 27rem;
+    margin: 0 3rem;
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: bolder; 
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+container .c-search-box .c-image .c-search input{
+    position: absolute;
+    top: 33rem;
+    margin: 0 3rem;
+    font-size: 1.5rem;  
+    text-align: center;
+    border-radius: 10px;
+    padding: 0.5rem 2rem; 
+    border: none;
+}
+container .c-search-box .c-image .c-button a{
+    position: absolute;
+    top: 33rem;
+    left: 56rem;
+    text-decoration: none;
+    color: white;
+    border: 1px hidden black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    backdrop-filter: blur(10px);
+    font-family: "Montserrat", sans-serif;
+}
+container .c-search-box .c-image .c-button a:hover{
+    transition: all 0.2s ease-in-out;
+    background-color: #FA9E8C;
+    color: white;
+    font-weight: bolder;
+}
+container .c-search-box .c-image img{
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 30px;
+}
+container .nearby-restaurant .nrc-card .nrc_1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2.5rem 0;
 }

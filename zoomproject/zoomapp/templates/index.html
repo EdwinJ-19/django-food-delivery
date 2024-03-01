@@ -5,32 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZoomDeli</title>
+    <link href="{%static 'images/bowl-food-solid.svg'%}" rel="icon" type="img/icons"> 
     <!--CSS LINK-->
     <link href="{%static 'css/index.css'%}" rel="stylesheet" type="text/css">
     <!--FONT LINK-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Kode+Mono:wght@400..700&family=Slackside+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Kode+Mono:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Slackside+One&display=swap" rel="stylesheet">
+    <!--JS link-->
+    <script src="https://kit.fontawesome.com/daa48e517c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
         <div class="nav-head">
             <p>ZoomDeli</p>
-            <div class="search">
-                <input id="searchInput" type="text" placeholder="Search for a restaurant..."/>
+            <div class="nav-head-search">
+                <input id="searchInput" type="text" placeholder="&#128269;Search for a Restaurant"/>
             </div>
         </div>
         <div class="nav-user">
             <div class="button">
                 <ul>
-                    <li>Cart</li>
-                    <li>Global</li>
+                    <li><a href="">Cart</a></li>
+                    <li><a href="">Global</a></li>
                 </ul>
             </div>
-            <p>User</p>
+            <p><a href="">User</a></p>
         </div>
     </nav>
     <container>
+        <div class="c-search-box">
+            <div class="c-image">
+                <img src="{%static 'images/main_1w.avif'%}" alt="indian_images">
+                    <div class="c-text">
+                        <p>Food? Delivered to your door!</p>
+                    </div>
+                    <div class="c-search">
+                        <input id="searchInput" type="text" placeholder="&#128269;Nearby Restaurant">
+                    </div>
+                    <div class="c-button">
+                        <a href="">Find Food</a>
+                    </div>
+            </div>
+        </div>
+
+        <div class="nearby-restaurant">
+            <div class="nrc-title">
+                <h3>Nearby Restaurant</h3>
+            </div>
+            <div class="nrc-img">
+                <img src="" alt="img-1">
+                <h4>Red Dragon</h4>
+                <p>25 minutes</p>
+            </div>
+            <div class="nrc-img">
+                <img src="" alt="img-1">
+                <h4>Red Dragon</h4>
+                <p>25 minutes</p>
+            </div>
+            <div class="nrc-img">
+                <img src="" alt="img-1">
+                <h4>Red Dragon</h4>
+                <p>25 minutes</p>
+            </div>
+            <div class="nrc-img">
+                <img src="" alt="img-1">
+                <h4>Red Dragon</h4>
+                <p>25 minutes</p>
+            </div>
+        </div>
+
+        <div class="explore">
+            <h3>Explore By Cuisine</h3>
+        </div>
+
 
     </container>
     <footer>
