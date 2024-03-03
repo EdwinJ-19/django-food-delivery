@@ -13,7 +13,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 3rem;
+    margin: 2rem 3rem;
     flex-wrap: wrap;
 }
 nav .nav-head{
@@ -24,14 +24,6 @@ nav .nav-head{
 nav .nav-head p{
     font-size: 2rem;
     font-family: "Kode Mono", monospace;
-}
-nav .nav-head .nav-head-search input{
-    border: none;
-    border-radius: 10px;
-    background-color: #FA9E8C;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-align: center;
 }
 nav .nav-user{
     display: flex;
@@ -44,10 +36,55 @@ nav .nav-user .button ul{
     list-style: none;
     gap: 2rem;
 }
-
-
-
-
+container{
+    text-align: center;
+}
+container form h1{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+container form{
+    margin-top: 7rem;
+    /* background-color: lightblue; */
+    padding: 1rem 0;
+}
+container form input{
+    border: none;
+    padding: 1rem 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    background-color: #ffc8bd;
+}
+container form input:focus{
+    outline: none;
+    box-shadow: 1px 1px 5px #333;
+}
+container form .f-button button{
+    border: none;
+    padding: 0.5rem 1rem;
+    background-color: #EDF2F4;
+    color: black;
+}
+container form .f-button button:hover{
+    background-color: #2DBA4E;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+container form .f-button p{
+    margin: 1rem 0;
+}
+container form .forgot{
+    margin: 1rem 0;
+}
+container form .forgot a{
+    color: black;
+    cursor: alias;
+}
+container form .signup a{
+    color: black;
+    cursor: alias;
+}
 footer{
     display: flex;
     align-items: center;
@@ -55,6 +92,10 @@ footer{
     padding: 2rem 3rem;
     flex-wrap: wrap;
     color: #ff8f78;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 footer .fbox-1{
     display: flex;
@@ -70,16 +111,17 @@ footer .fbox-1 a:hover{
     transition: all 0.2s ease-in-out;
 }
 footer .flink-1{
-    text-align: center;
+    text-align: right;
     font-family: "Kode Mono", monospace;
 }
 footer .flink-1 a{
     display: inline-block;
     /* background-color: lightblue; */
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     margin-bottom: 0.5rem;
     color: #333;
     font-size: 1.5rem;
+    padding-left: 1rem;
 }
 footer .flink-1 a .fa-facebook:hover{
     color: #4267B2;

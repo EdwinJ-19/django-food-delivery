@@ -7,7 +7,7 @@
     <title>ZoomDeli | Sign Up</title>
     <link href="{%static 'images/bowl-food-solid.svg'%}" rel="icon" type="img/icons"> 
     <!--CSS LINK-->
-    <link href="{%static 'css/cart.css'%}" rel="stylesheet" type="text/css">
+    <link href="{%static 'css/register.css'%}" rel="stylesheet" type="text/css">
     <!--FONT LINK-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,14 +19,14 @@
     <nav>
         <div class="nav-head">
             <p>ZoomDeli</p>
-            <div class="nav-head-search">
-                <input id="searchInput" type="text" placeholder="&#128269;Search for a Restaurant"/>
-            </div>
         </div>
         <div class="nav-user">
             <div class="button">
                 <ul>
                     <li><a href="{%url 'home'%}">Home</a></li>
+                    <li><a href="">Restaurant</a></li>
+                    <li><a href="">Gourmet Restaurant</a></li>
+                    <li><a href="">Help</a></li>
                     <li><a href="{%url 'login'%}">Login</a></li>
                 </ul>
             </div>
@@ -34,6 +34,29 @@
     </nav>
     <container>
        
+        <form action="">
+            <h1>Create an Account</h1>
+            <div class="firstname">
+                <label for="firstname">First Name</label><br>
+                <input type="text" id="firstname" name="firstname" placeholder="Enter First Name" size="30">
+            </div>
+            <div class="lastname">
+                <label for="lastname">Last Name</label><br>
+                <input type="text" id="lastname" name="lastname" placeholder="Enter Last Name" size="30">
+            </div>
+            <div class="email">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter email" size="30">
+            </div>
+            <div class="password">
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter password" size="30">
+            </div>
+            <div class="f-button">
+                <button>Create Account</button>
+                <p>By creating an account, you agree to the <br>Terms of Service and Privacy Policy</p>
+            </div>
+        </form>
 
     </container>
     <footer>
