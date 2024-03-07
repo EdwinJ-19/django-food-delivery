@@ -1,7 +1,8 @@
-- Homepage with featured restaurants and search functionality
+- login and register page - done
+- Homepage with featured restaurants and search functionality - done
 - Restaurant menu listing with categories and popular items highlight
 - Individual food item detail page with customization options
-- Shopping cart summary with item edit options
+- Shopping cart summary with item edit options - done
 - Checkout screen with delivery address, payment method, and order review
 - Order confirmation page with estimated delivery time and order tracking
 

@@ -1,0 +1,117 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZoomDeli | Checkout</title>
+    <link href="{%static 'images/bowl-food-solid.svg'%}" rel="icon" type="img/icons"> 
+    <!--CSS LINK-->
+    <link href="{%static 'css/checkout.css'%}" rel="stylesheet" type="text/css">
+    <!--FONT LINK-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Annapurna+SIL:wght@400;700&family=Kode+Mono:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Slackside+One&display=swap" rel="stylesheet">
+    <!--JS link-->
+    <script src="https://kit.fontawesome.com/daa48e517c.js" crossorigin="anonymous"></script>
+    <script src="{%static 'js/checkout.js'%}"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-head">
+            <p>ZoomDeli</p>
+        </div>
+        <div class="nav-user">
+            <div class="button">
+                <ul>
+                    <li><a href="{%url 'home'%}">Home</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <container>
+
+        <form action="">
+            <div class="checkout-box">
+                <div class="cb-head">
+                    <h2>Checkout</h2>
+                </div>
+                <div class="cb-box">
+                    <input type="text" placeholder="Your Address &#128205;">
+                </div>
+                <div class="cb-instruct">
+                    <label for="delivery-instructions">Delivery Instructions:</label>
+                    <input type="text" id="delivery-instructions" name="delivery-instructions">
+                    <button type="button" id="add-button" onclick="add()">Add</button>
+                </div>
+                <p id="message"></p>
+            </div>
+
+            <div class="promo-box">
+                <div class="promo-head">
+                    <h2>Promo Code</h2>
+                </div>
+                <div class="promo-input">
+                    <input type="text" placeholder="Your Promo Code" size="10">
+                </div>
+            </div>
+            <div class="order-summary">
+                <div class="os-head">
+                    <h2>Cart Summary</h2>
+                </div>
+                <div class="os-amount">
+                    <div class="total1">
+                        <p>Subtotal:</p>
+                        <p>$3.00</p>
+                    </div>
+                    <div class="rfee">
+                        <p>Restaurant fee:</p>
+                        <p>$3.00</p>
+                    </div>
+                    <div class="dfee">
+                        <p>Delivery fee:</p>
+                        <p>$5.00</p>
+                    </div>
+                    <div class="etax">
+                        <p>Estimated tax:</p>
+                        <p>$2.00</p>
+                    </div>
+                    <div class="code">
+                        <p>Promo-code:</p>
+                        <p>$35.00</p>
+                    </div>
+                    <div class="total">
+                        <p>Total:</p>
+                        <p>$35.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-box">
+                <div class="cartb-img">
+                    <img src="{%static 'images/nearby.jpg'%}" alt="">
+                </div>
+                <div class="cartb-details">
+                    <h3>Cart Head</h3>
+                    <p>Quantity:1 @ $120.00</p>
+                </div>
+            </div>
+        </form>
+
+    </container>
+    <footer>
+        <div class="fbox-1">
+            <a href="">Become a delivery driver</a>
+            <a href="">Become a partner</a>
+            <a href="">Support</a>
+        </div>
+        <div class="flink-1">
+            <a href=""><i class="fa-brands fa-facebook" target="_blank"></i></a>
+            <a href="https://www.instagram.com/nothinged._19/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/edwin-james-3a27a411b/"><i class="fa-brands fa-linkedin" target="_blank"></i></a>
+            <a href="https://github.com/EdwinJ-19"><i class="fa-brands fa-github" target="_blank"></i></a>
+            <p>&copy; 2024 ZoomDeli, Inc.</p>
+        </div>
+    </footer>
+</body>
+</html>

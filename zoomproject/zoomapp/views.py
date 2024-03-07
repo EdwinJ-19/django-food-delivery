@@ -11,3 +11,12 @@ def login(request):
 
 def register(request):
     return render(request,'register.html')
+
+def checkout(request):
+    return render(request,'checkout.html')
+
+def delivery(request):
+    return render(request,'delivery.html')
+
+def restaurantmenu(request):
+    return render(request,'restaurantmenu.html')

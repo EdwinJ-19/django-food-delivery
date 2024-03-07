@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* font-family: "Annapurna SIL", serif; */
+    font-family: "Montserrat", sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 3rem;
+    flex-wrap: wrap;
+}
+nav .nav-head{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+nav .nav-head p{
+    font-size: 2rem;
+    font-family: "Kode Mono", monospace;
+}
+nav .nav-user{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+nav .nav-user .button ul{
+    display: flex;
+    align-items:center;
+    list-style: none;
+    gap: 2rem;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    flex-wrap: wrap;
+    color: #ff8f78;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+footer .fbox-1{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+footer .fbox-1 a{
+    text-decoration: none;
+    color: #ff8f78;
+}
+footer .fbox-1 a:hover{
+    color: black;
+    transition: all 0.2s ease-in-out;
+}
+footer .flink-1{
+    text-align: right;
+    font-family: "Kode Mono", monospace;
+}
+footer .flink-1 a{
+    display: inline-block;
+    /* background-color: lightblue; */
+    /* padding: 0 1rem; */
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+}
+footer .flink-1 a .fa-facebook:hover{
+    color: #4267B2;
+    transition: all 0.2s ease-in-out;
+}
+footer .flink-1 a .fa-instagram:hover{
+    color: #C13584;
+    transition: all 0.2s ease-in-out;
+}
+footer .flink-1 a .fa-github:hover{
+    color: #2DBA4E;
+    transition: all 0.2s ease-in-out;
+}
+footer .flink-1 a .fa-linkedin:hover{
+    color: #0A66C2;
+    transition: all 0.2s ease-in-out;
+}
+footer .fform{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    /* background-color: lightblue; */
+}
+footer .fform input{
+    border: 1px hidden black;
+    box-shadow: 1px 1px 1px 1.5px #333;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+footer .fform button{
+    border: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background-color: #FFE190;
+    color: black;
+}
+footer .fform button:hover{
+    background-color: #2DBA4E;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
