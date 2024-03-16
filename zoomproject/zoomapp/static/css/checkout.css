@@ -38,20 +38,38 @@ nav .nav-user .button ul{
 } 
 
 container form{
-    background-color: lightblue;
+    background-color: #cfcfcf;
     display: block;
     margin: 0 20vw;
+    padding: 1rem;
+}
+container form .checkout-box .cb-box{
+    /* background-color: red; */
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
 }
 container form .checkout-box .cb-box input{
-    margin: 1rem 0;
     border: none;
     padding: 1rem;
     border-radius: 0.5rem;
-    width: 20vw;
+    width: 50vw;
+}
+container form .checkout-box .cb-box input:hover{
+    border: 1px hidden black;
+    box-shadow: 1.5px 1px 0.5px 0.5px #333;
+    transition: all 0.4s ease-in-out;
+}
+container form .checkout-box .cb-box input:focus{
+    /* border: 1px solid black; */
+    outline: none;
 }
 container form .checkout-box .cb-instruct{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
     margin: 1rem 0;
@@ -60,6 +78,15 @@ container form .checkout-box .cb-instruct input{
     border: none;
     padding: 0.5rem;
     border-radius: 0.5rem;
+}
+container form .checkout-box .cb-instruct input:hover{
+    border: 1px hidden black;
+    box-shadow: 1.5px 1px 0.5px 0.5px #333;
+    transition: all 0.4s ease-in-out;
+}
+container form .checkout-box .cb-instruct input:focus{
+    /* border: 1px solid black; */
+    outline: none;
 }
 container form .checkout-box .cb-instruct button{
     border: none;
@@ -71,19 +98,53 @@ container form .checkout-box .cb-instruct button:hover{
     color: white;
     transition: all 0.4s ease-in-out;
 }
+container form .promo-box .promo-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 container form .promo-box .promo-input input{
     margin: 1rem 0;
     border: none;
     padding: 1rem;
-    width: 20vw;
+    width: 50vw;
     border-radius: 0.5rem;
 }
+container form .promo-box .promo-input input:hover{
+    border: 1px hidden black;
+    box-shadow: 1.5px 1px 0.5px 0.5px #333;
+    transition: all 0.4s ease-in-out;
+}
 container form .promo-box .promo-input input:focus{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     outline: none;
 }
 container form .order-summary .os-amount{
-    
+    /* background-color: red; */
+    margin: 1rem 5rem;
+    font-size: 1.2rem;
+}
+container form .order-summary .os-amount .total1,.rfee,.dfee,.etax,.code,.total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0.5rem 0;
+}
+container form .cart-box{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 1rem 5rem;
+    /* background-color: red; */
+    font-size: 1.2rem;
+}
+container form .cart-box .cartb-img img{
+    /* background-color: red; */
+    width: 20vw;
+    object-fit: contain;
+    border-radius: 0.5rem;
 }
 
 footer{

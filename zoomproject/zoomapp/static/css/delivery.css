@@ -36,6 +36,77 @@ nav .nav-user .button ul{
     list-style: none;
     gap: 2rem;
 }
+container .delivery-box{
+    /* background-color: red; */
+    margin: 5rem 10rem;
+}
+container .delivery-box .delivery-time,.delivery-button{
+    margin: 2rem 0;
+}
+container .delivery-box .delivery-time{
+    text-align: center;
+}
+container .delivery-box .dt-boxnum{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+container .delivery-box .dt-boxnum .hours,.minutes,.seconds{
+    margin: 1rem 0;
+}
+container .delivery-box .dt-boxnum .hours .hours-num{
+    background-color: #ff8f78;
+    padding: 1rem 4rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-weight: bolder;
+}
+container .delivery-box .dt-boxnum .minutes .minutes-num{
+    background-color: #ff8f78;
+    padding: 1rem 4rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-weight: bolder;
+}
+container .delivery-box .dt-boxnum .seconds .seconds-num{
+    background-color: #ff8f78;
+    padding: 1rem 4rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    color: white;
+    font-weight: bolder;
+}
+container .delivery-box .delivery-details,.delivery-instruct{
+    /* background-color: rebeccapurple; */
+    margin: 2rem 20rem;
+}
+container .delivery-box .delivery-details p{
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+container .delivery-box .delivery-instruct p{
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+container .delivery-box .delivery-button{
+    text-align: center;
+}
+container .delivery-box .delivery-button button{
+    padding: 0.5rem 10rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+container .delivery-box .delivery-button button:hover{
+    background-color: #ff8f78;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+
 
 footer{
     display: flex;
